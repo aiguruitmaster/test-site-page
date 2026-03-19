@@ -1,71 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bet Ninja Casino: Top UK Online Slots & Betting</title>
-    <meta name="description" content="Bet Ninja Casino review: £500 welcome bonus, 2000+ games, crypto payments. Honest expert analysis of features, payouts & player safety.">
+    <meta name="description" content="Bet Ninja Casino review with EXCLUSIVE BONUSes, payment options, and expert analysis. Discover withdrawal times, game selection, and licensing info.">
     
     
-    
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Schema.org Date -->
+    <meta property="article:published_time" content="2026-03-19">
+
     <script>
         tailwind.config = {
+            darkMode: 'class',
             theme: {
                 extend: {
-                    fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
-                    },
                     colors: {
-                        ninja: {
-                            green: '#00E773',
-                            dark: '#09090b', // zinc-950
-                            card: '#18181b', // zinc-900
-                            border: '#27272a', // zinc-800
+                        brand: {
+                            DEFAULT: '#00E573', // Bright Ninja Green
+                            hover: '#00c462',
+                            dark: '#00a352'
+                        },
+                        dark: {
+                            950: '#0a0a0a',
+                            900: '#121212',
+                            800: '#1f1f1f',
+                            700: '#2d2d2d'
                         }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
                     }
                 }
             }
         }
     </script>
-    
-    <!-- Lucide Icons -->
-    <script src="https://unpkg.com/lucide@latest"></script>
-
     <style>
-        body {
-            background-color: #09090b;
-            color: #f4f4f5;
-            -webkit-font-smoothing: antialiased;
-        }
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #0a0a0a; }
+        ::-webkit-scrollbar-thumb { background: #2d2d2d; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #00E573; }
         
-        /* Custom glow effects */
-        .glow-text {
-            text-shadow: 0 0 20px rgba(0, 231, 115, 0.5);
+        /* Subtle Grid Background for Hero */
+        .bg-grid-pattern {
+            background-image: linear-gradient(to right, #1f1f1f 1px, transparent 1px),
+                              linear-gradient(to bottom, #1f1f1f 1px, transparent 1px);
+            background-size: 40px 40px;
         }
-        .glow-box {
-            box-shadow: 0 0 30px rgba(0, 231, 115, 0.15);
-        }
-        
-        /* Hero Background */
-        .hero-bg {
-            background: radial-gradient(circle at top right, rgba(0, 231, 115, 0.15) 0%, rgba(9, 9, 11, 0) 50%),
-                        radial-gradient(circle at bottom left, rgba(0, 231, 115, 0.05) 0%, rgba(9, 9, 11, 0) 50%);
-        }
-
-        /* Hide scrollbar for payment slider if needed */
-        .no-scrollbar::-webkit-scrollbar {
-            display: none;
-        }
-        .no-scrollbar {
-            -ms-overflow-style: none;
-            scrollbar-width: none;
+        .hero-gradient {
+            background: radial-gradient(circle at 50% 0%, rgba(0, 229, 115, 0.1) 0%, rgba(10, 10, 10, 1) 70%);
         }
     </style>
 
@@ -74,7 +65,7 @@
 <link rel="alternate" href="https://bet-ninja-casino.org.uk/" hreflang="en" />
 
 <meta property="og:title" content="Bet Ninja Casino: Top UK Online Slots & Betting" />
-<meta property="og:description" content="Bet Ninja Casino review: £500 welcome bonus, 2000+ games, crypto payments. Honest expert analysis of features, payouts & player safety." />
+<meta property="og:description" content="Bet Ninja Casino review with exclusive bonuses, payment options, and expert analysis. Discover withdrawal times, game selection, and licensing info." />
 <meta property="og:url" content="https://test-site-page/" />
 <meta property="og:type" content="article" />
 <meta property="og:site_name" content="Bet Ninja Casino" />
@@ -89,10 +80,10 @@
     "@id": "https://test-site-page/"
   },
   "headline": "Bet Ninja Casino: Top UK Online Slots & Betting",
-  "description": "Bet Ninja Casino review: £500 welcome bonus, 2000+ games, crypto payments. Honest expert analysis of features, payouts & player safety.",
+  "description": "Bet Ninja Casino review with exclusive bonuses, payment options, and expert analysis. Discover withdrawal times, game selection, and licensing info.",
   "author": {
     "@type": "Person",
-    "name": "Sophie Williams"
+    "name": "Elena Russo"
   },
   "publisher": {
     "@type": "Organization",
@@ -145,322 +136,332 @@
   })();
 </script>
 </head>
-<body class="font-sans antialiased bg-ninja-dark text-zinc-100 flex flex-col min-h-screen">
+<body class="bg-dark-950 text-gray-300 font-sans antialiased selection:bg-brand selection:text-dark-950">
 
     <!-- 1. Sticky Header -->
-    <header class="fixed w-full top-0 z-50 bg-ninja-dark/90 backdrop-blur-md border-b border-ninja-border transition-all duration-300">
+    <header class="sticky top-0 z-50 bg-dark-900/90 backdrop-blur-md border-b border-dark-800">
         <div class="container mx-auto px-4 h-20 flex items-center justify-between">
-            
-            <!-- Logo area -->
-            <a href="index.html" class="flex items-center gap-2 group">
-                <div class="w-8 h-8 rounded bg-ninja-green flex items-center justify-center text-ninja-dark group-hover:scale-105 transition-transform">
-                    <i data-lucide="swords" class="w-5 h-5"></i>
+            <!-- Left: Brand -->
+            <div class="flex items-center gap-2">
+                <div class="w-10 h-10 rounded-full bg-brand flex items-center justify-center text-dark-950">
+                    <i data-lucide="swords" class="w-6 h-6"></i>
                 </div>
-                <span class="brand-name-inject text-2xl font-black tracking-tight text-white group-hover:text-ninja-green transition-colors uppercase">Bet Ninja</span>
-            </a>
+                <span class="text-2xl font-black text-white tracking-tight uppercase brand-name-el">Bet Ninja</span>
+            </div>
 
-            <!-- Desktop Nav -->
-            <nav class="hidden md:flex items-center gap-8 font-medium text-sm text-zinc-300">
-                <a href="index.html" class="hover:text-ninja-green transition-colors">Home</a>
-                <a href="promotions.html" class="hover:text-ninja-green transition-colors">Promotions</a>
-                <a href="reviews.html" class="hover:text-ninja-green transition-colors">Reviews</a>
-                <a href="faq.html" class="hover:text-ninja-green transition-colors">FAQ</a>
+            <!-- Middle: Nav (Desktop) -->
+            <nav class="hidden lg:flex items-center gap-8 font-medium text-sm">
+                <a href="index.html" class="text-white hover:text-brand transition-colors">Home</a>
+                <a href="promotions.html" class="text-gray-400 hover:text-brand transition-colors">Promotions</a>
+                <a href="reviews.html" class="text-gray-400 hover:text-brand transition-colors">Reviews</a>
+                <a href="faq.html" class="text-gray-400 hover:text-brand transition-colors">FAQ</a>
             </nav>
 
-            <!-- Auth Buttons -->
-            <div class="flex items-center gap-4">
-                <a href="#" class="brand-cta hidden sm:block text-sm font-semibold text-white hover:text-ninja-green transition-colors">Login</a>
-                <a href="#" class="brand-cta bg-ninja-green text-ninja-dark px-6 py-2.5 rounded-md font-bold text-sm hover:bg-emerald-400 hover:shadow-[0_0_15px_rgba(0,231,115,0.4)] transition-all transform hover:-translate-y-0.5">Sign Up</a>
+            <!-- Right: CTAs -->
+            <div class="flex items-center gap-3">
+                <a href="#" class="brand-cta hidden sm:flex items-center justify-center px-5 py-2.5 text-sm font-bold text-white hover:text-brand transition-colors">
+                    Login
+                </a>
+                <a href="#" class="brand-cta flex items-center justify-center px-6 py-2.5 text-sm font-bold bg-brand hover:bg-brand-hover text-dark-950 rounded-md transition-all shadow-[0_0_15px_rgba(0,229,115,0.3)] hover:shadow-[0_0_25px_rgba(0,229,115,0.5)]">
+                    Sign Up
+                </a>
             </div>
         </div>
     </header>
 
-    <!-- Main Content -->
-    <main class="flex-grow pt-20">
-
-        <!-- 2. Hero Section -->
-        <section class="hero-bg relative pt-24 pb-32 px-4 overflow-hidden border-b border-ninja-border">
-            <div class="container mx-auto max-w-6xl relative z-10 flex flex-col items-center text-center lg:items-start lg:text-left">
-                
-                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-ninja-card border border-ninja-border text-xs font-semibold text-ninja-green mb-8">
-                    <i data-lucide="shield-check" class="w-4 h-4"></i>
-                    <span>Verified & Secure 2026</span>
+    <!-- 2. Hero Section -->
+    <section class="relative pt-24 pb-32 overflow-hidden bg-dark-950">
+        <div class="absolute inset-0 bg-grid-pattern opacity-20 z-0"></div>
+        <div class="absolute inset-0 hero-gradient z-0"></div>
+        
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="max-w-3xl mx-auto text-center">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-dark-800 border border-dark-700 text-brand text-xs font-bold uppercase tracking-wider mb-6">
+                    <i data-lucide="shield-check" class="w-4 h-4"></i> Verified 2026
                 </div>
-
-                <h1 class="text-5xl md:text-7xl font-black tracking-tight mb-6 leading-tight">
-                    <span class="block text-white">Unleash Your</span>
-                    <span class="brand-bonus-inject text-ninja-green glow-text block mt-2">100% Bonus + 100 FS</span>
+                
+                <h1 class="text-5xl md:text-7xl font-black text-white mb-6 leading-tight tracking-tighter">
+                    Unleash Your <br>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand to-emerald-300 brand-bonus-el">
+                        Massive Welcome Bonus
+                    </span>
                 </h1>
                 
-                <p class="text-lg md:text-xl text-zinc-400 mb-10 max-w-2xl font-medium">
-                    Join the elite ranks at <span class="brand-name-inject text-white font-bold">Bet Ninja</span>. Experience lightning-fast withdrawals, thousands of premium games, and stealthy rewards tailored for champions.
+                <p class="text-lg md:text-xl text-gray-400 mb-10 max-w-2xl mx-auto">
+                    Join <span class="brand-name-el text-white font-semibold">Bet Ninja</span> today and experience premium gaming, lightning-fast payouts, and exclusive VIP rewards.
                 </p>
-
-                <div class="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
-                    <a href="#" class="brand-cta bg-ninja-green text-ninja-dark px-10 py-5 rounded-lg font-black text-lg text-center uppercase tracking-wide hover:bg-emerald-400 hover:shadow-[0_0_30px_rgba(0,231,115,0.5)] transition-all transform hover:-translate-y-1">
-                        Claim Welcome Offer
-                    </a>
-                </div>
                 
-                <!-- Trust indicators below CTA -->
-                <div class="mt-12 flex items-center justify-center lg:justify-start gap-6 text-zinc-500 text-sm font-medium">
-                    <div class="flex items-center gap-2">
-                        <i data-lucide="zap" class="w-5 h-5 text-ninja-green"></i>
-                        <span>Instant Payouts</span>
-                    </div>
-                    <div class="flex items-center gap-2">
-                        <i data-lucide="headset" class="w-5 h-5 text-ninja-green"></i>
-                        <span>24/7 Support</span>
-                    </div>
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                    <a href="#" class="brand-cta w-full sm:w-auto px-10 py-5 bg-brand hover:bg-brand-hover text-dark-950 font-black text-lg rounded-md transition-all transform hover:scale-105 shadow-[0_0_30px_rgba(0,229,115,0.4)] flex items-center justify-center gap-2">
+                        Claim Bonus Now <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                    </a>
                 </div>
             </div>
-            
-            <!-- Abstract CSS Decorative Element -->
-            <div class="hidden lg:block absolute top-1/2 right-10 transform -translate-y-1/2 w-[500px] h-[500px] bg-gradient-to-br from-ninja-green/20 to-transparent rounded-full blur-3xl -z-10"></div>
-        </section>
+        </div>
+    </section>
 
-        <!-- 3. Featured Games Showcase -->
-        <section class="py-20 px-4 bg-ninja-dark">
-            <div class="container mx-auto">
-                <div class="flex items-end justify-between mb-10">
-                    <div>
-                        <h2 class="text-3xl font-bold text-white mb-2 flex items-center gap-3">
-                            <i data-lucide="gamepad-2" class="w-8 h-8 text-ninja-green"></i>
-                            Popular Games
-                        </h2>
-                        <p class="text-zinc-400">Top picks for stealthy wins</p>
+    <!-- 3. Featured Games Showcase -->
+    <section class="py-20 bg-dark-900 border-t border-dark-800">
+        <div class="container mx-auto px-4">
+            <div class="flex items-end justify-between mb-10">
+                <div>
+                    <h2 class="text-3xl font-black text-white mb-2 flex items-center gap-3">
+                        <i data-lucide="gamepad-2" class="text-brand w-8 h-8"></i> Popular Slots
+                    </h2>
+                    <p class="text-gray-400">Top rated games by our players</p>
+                </div>
+                <a href="#" class="brand-cta hidden sm:flex items-center gap-2 text-brand hover:text-white transition-colors font-semibold">
+                    View All Games <i data-lucide="chevron-right" class="w-4 h-4"></i>
+                </a>
+            </div>
+
+            <!-- Game Grid -->
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4">
+                
+                <!-- Game Card 1 -->
+                <div class="group relative aspect-[4/3] rounded-xl overflow-hidden bg-dark-800 border border-dark-700 hover:border-brand transition-all duration-300">
+                    <img src="" alt="Game" class="auto-slot-img w-full h-full object-cover absolute inset-0 z-0 opacity-40">
+                    <div class="absolute inset-0 bg-gradient-to-t from-dark-950 via-dark-950/40 to-transparent z-10 flex flex-col justify-end p-4">
+                        <span class="text-white font-bold text-sm md:text-base leading-tight truncate">Gonzo's Quest</span>
+                        <span class="text-brand text-xs mt-1">Megaways</span>
                     </div>
-                    <a href="#" class="brand-cta hidden sm:flex items-center gap-2 text-ninja-green font-semibold hover:text-emerald-400 transition-colors">
-                        View All Games <i data-lucide="arrow-right" class="w-4 h-4"></i>
-                    </a>
+                    <div class="absolute inset-0 bg-dark-950/80 z-20 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-300 backdrop-blur-sm">
+                        <a href="#" class="brand-cta bg-brand hover:bg-brand-hover text-dark-950 font-bold py-2 px-6 rounded-md flex items-center gap-2 transform translate-y-4 group-hover:translate-y-0 transition-all">
+                            <i data-lucide="play" class="w-4 h-4 text-dark-950 fill-current"></i> Play
+                        </a>
+                    </div>
                 </div>
 
-                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
-                    <!-- Game Card 1 -->
-                    <div class="group relative aspect-[3/4] rounded-xl overflow-hidden bg-ninja-card border border-ninja-border cursor-pointer">
-                        <img src="" alt="Game" class="auto-slot-img w-full h-full object-cover absolute inset-0 z-0 opacity-40">
-                        <!-- CSS Shape fallback/overlay -->
-                        <div class="absolute inset-0 bg-gradient-to-t from-ninja-dark via-ninja-dark/50 to-transparent z-0"></div>
-                        <div class="absolute top-0 right-0 w-16 h-16 bg-gradient-to-bl from-ninja-green/20 to-transparent z-0"></div>
-                        
-                        <div class="absolute inset-0 z-10 p-4 flex flex-col justify-end">
-                            <span class="text-xs font-bold text-ninja-green uppercase tracking-wider mb-1">Slots</span>
-                            <h3 class="text-sm font-bold text-white leading-tight">Ninja's Fortune</h3>
-                        </div>
-                        
-                        <!-- Hover Overlay -->
-                        <div class="absolute inset-0 bg-ninja-dark/80 backdrop-blur-sm z-20 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                            <a href="#" class="brand-cta bg-ninja-green text-ninja-dark px-6 py-2 rounded-full font-bold text-sm transform translate-y-4 group-hover:translate-y-0 transition-all duration-300">Play Now</a>
-                        </div>
+                <!-- Game Card 2 -->
+                <div class="group relative aspect-[4/3] rounded-xl overflow-hidden bg-dark-800 border border-dark-700 hover:border-brand transition-all duration-300">
+                    <img src="" alt="Game" class="auto-slot-img w-full h-full object-cover absolute inset-0 z-0 opacity-40">
+                    <div class="absolute inset-0 bg-gradient-to-t from-dark-950 via-dark-950/40 to-transparent z-10 flex flex-col justify-end p-4">
+                        <span class="text-white font-bold text-sm md:text-base leading-tight truncate">Book of Dead</span>
+                        <span class="text-brand text-xs mt-1">Classic Slot</span>
                     </div>
-
-                    <!-- Game Card 2 -->
-                    <div class="group relative aspect-[3/4] rounded-xl overflow-hidden bg-ninja-card border border-ninja-border cursor-pointer">
-                        <img src="" alt="Game" class="auto-slot-img w-full h-full object-cover absolute inset-0 z-0 opacity-40">
-                        <div class="absolute inset-0 bg-gradient-to-t from-ninja-dark via-ninja-dark/50 to-transparent z-0"></div>
-                        <div class="absolute top-0 left-0 w-20 h-20 bg-gradient-to-br from-purple-500/20 to-transparent z-0"></div>
-                        
-                        <div class="absolute inset-0 z-10 p-4 flex flex-col justify-end">
-                            <span class="text-xs font-bold text-purple-400 uppercase tracking-wider mb-1">Megaways</span>
-                            <h3 class="text-sm font-bold text-white leading-tight">Neon Dragon</h3>
-                        </div>
-                        
-                        <div class="absolute inset-0 bg-ninja-dark/80 backdrop-blur-sm z-20 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                            <a href="#" class="brand-cta bg-ninja-green text-ninja-dark px-6 py-2 rounded-full font-bold text-sm transform translate-y-4 group-hover:translate-y-0 transition-all duration-300">Play Now</a>
-                        </div>
+                    <div class="absolute inset-0 bg-dark-950/80 z-20 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-300 backdrop-blur-sm">
+                        <a href="#" class="brand-cta bg-brand hover:bg-brand-hover text-dark-950 font-bold py-2 px-6 rounded-md flex items-center gap-2 transform translate-y-4 group-hover:translate-y-0 transition-all">
+                            <i data-lucide="play" class="w-4 h-4 text-dark-950 fill-current"></i> Play
+                        </a>
                     </div>
+                </div>
 
-                    <!-- Game Card 3 -->
-                    <div class="group relative aspect-[3/4] rounded-xl overflow-hidden bg-ninja-card border border-ninja-border cursor-pointer">
-                        <img src="" alt="Game" class="auto-slot-img w-full h-full object-cover absolute inset-0 z-0 opacity-40">
-                        <div class="absolute inset-0 bg-gradient-to-t from-ninja-dark via-ninja-dark/50 to-transparent z-0"></div>
-                        <div class="absolute bottom-0 right-0 w-24 h-24 bg-gradient-to-tl from-amber-500/20 to-transparent z-0 rounded-tl-full"></div>
-                        
-                        <div class="absolute inset-0 z-10 p-4 flex flex-col justify-end">
-                            <span class="text-xs font-bold text-amber-400 uppercase tracking-wider mb-1">Jackpot</span>
-                            <h3 class="text-sm font-bold text-white leading-tight">Shadow Strike</h3>
-                        </div>
-                        
-                        <div class="absolute inset-0 bg-ninja-dark/80 backdrop-blur-sm z-20 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                            <a href="#" class="brand-cta bg-ninja-green text-ninja-dark px-6 py-2 rounded-full font-bold text-sm transform translate-y-4 group-hover:translate-y-0 transition-all duration-300">Play Now</a>
-                        </div>
+                <!-- Game Card 3 -->
+                <div class="group relative aspect-[4/3] rounded-xl overflow-hidden bg-dark-800 border border-dark-700 hover:border-brand transition-all duration-300">
+                    <img src="" alt="Game" class="auto-slot-img w-full h-full object-cover absolute inset-0 z-0 opacity-40">
+                    <div class="absolute inset-0 bg-gradient-to-t from-dark-950 via-dark-950/40 to-transparent z-10 flex flex-col justify-end p-4">
+                        <span class="text-white font-bold text-sm md:text-base leading-tight truncate">Sweet Bonanza</span>
+                        <span class="text-brand text-xs mt-1">Jackpot</span>
                     </div>
-
-                    <!-- Game Card 4 -->
-                    <div class="group relative aspect-[3/4] rounded-xl overflow-hidden bg-ninja-card border border-ninja-border cursor-pointer">
-                        <img src="" alt="Game" class="auto-slot-img w-full h-full object-cover absolute inset-0 z-0 opacity-40">
-                        <div class="absolute inset-0 bg-gradient-to-t from-ninja-dark via-ninja-dark/50 to-transparent z-0"></div>
-                        <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-16 h-16 border-4 border-red-500/20 rounded-full z-0"></div>
-                        
-                        <div class="absolute inset-0 z-10 p-4 flex flex-col justify-end">
-                            <span class="text-xs font-bold text-red-400 uppercase tracking-wider mb-1">Live Casino</span>
-                            <h3 class="text-sm font-bold text-white leading-tight">Emerald Roulette</h3>
-                        </div>
-                        
-                        <div class="absolute inset-0 bg-ninja-dark/80 backdrop-blur-sm z-20 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                            <a href="#" class="brand-cta bg-ninja-green text-ninja-dark px-6 py-2 rounded-full font-bold text-sm transform translate-y-4 group-hover:translate-y-0 transition-all duration-300">Play Now</a>
-                        </div>
+                    <div class="absolute inset-0 bg-dark-950/80 z-20 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-300 backdrop-blur-sm">
+                        <a href="#" class="brand-cta bg-brand hover:bg-brand-hover text-dark-950 font-bold py-2 px-6 rounded-md flex items-center gap-2 transform translate-y-4 group-hover:translate-y-0 transition-all">
+                            <i data-lucide="play" class="w-4 h-4 text-dark-950 fill-current"></i> Play
+                        </a>
                     </div>
+                </div>
 
-                    <!-- Game Card 5 -->
-                    <div class="group relative aspect-[3/4] rounded-xl overflow-hidden bg-ninja-card border border-ninja-border cursor-pointer hidden md:block">
-                        <img src="" alt="Game" class="auto-slot-img w-full h-full object-cover absolute inset-0 z-0 opacity-40">
-                        <div class="absolute inset-0 bg-gradient-to-t from-ninja-dark via-ninja-dark/50 to-transparent z-0"></div>
-                        <div class="absolute top-4 right-4 w-8 h-8 bg-blue-500/20 transform rotate-45 z-0"></div>
-                        
-                        <div class="absolute inset-0 z-10 p-4 flex flex-col justify-end">
-                            <span class="text-xs font-bold text-blue-400 uppercase tracking-wider mb-1">Table Game</span>
-                            <h3 class="text-sm font-bold text-white leading-tight">Cyber Blackjack</h3>
-                        </div>
-                        
-                        <div class="absolute inset-0 bg-ninja-dark/80 backdrop-blur-sm z-20 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                            <a href="#" class="brand-cta bg-ninja-green text-ninja-dark px-6 py-2 rounded-full font-bold text-sm transform translate-y-4 group-hover:translate-y-0 transition-all duration-300">Play Now</a>
-                        </div>
+                <!-- Game Card 4 -->
+                <div class="group relative aspect-[4/3] rounded-xl overflow-hidden bg-dark-800 border border-dark-700 hover:border-brand transition-all duration-300">
+                    <img src="" alt="Game" class="auto-slot-img w-full h-full object-cover absolute inset-0 z-0 opacity-40">
+                    <div class="absolute inset-0 bg-gradient-to-t from-dark-950 via-dark-950/40 to-transparent z-10 flex flex-col justify-end p-4">
+                        <span class="text-white font-bold text-sm md:text-base leading-tight truncate">Gates of Olympus</span>
+                        <span class="text-brand text-xs mt-1">Bonus Buy</span>
                     </div>
+                    <div class="absolute inset-0 bg-dark-950/80 z-20 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-300 backdrop-blur-sm">
+                        <a href="#" class="brand-cta bg-brand hover:bg-brand-hover text-dark-950 font-bold py-2 px-6 rounded-md flex items-center gap-2 transform translate-y-4 group-hover:translate-y-0 transition-all">
+                            <i data-lucide="play" class="w-4 h-4 text-dark-950 fill-current"></i> Play
+                        </a>
+                    </div>
+                </div>
 
-                    <!-- Game Card 6 -->
-                    <div class="group relative aspect-[3/4] rounded-xl overflow-hidden bg-ninja-card border border-ninja-border cursor-pointer hidden lg:block">
-                        <img src="" alt="Game" class="auto-slot-img w-full h-full object-cover absolute inset-0 z-0 opacity-40">
-                        <div class="absolute inset-0 bg-gradient-to-t from-ninja-dark via-ninja-dark/50 to-transparent z-0"></div>
-                        <div class="absolute bottom-1/2 left-0 w-full h-px bg-gradient-to-r from-transparent via-ninja-green/30 to-transparent z-0"></div>
-                        
-                        <div class="absolute inset-0 z-10 p-4 flex flex-col justify-end">
-                            <span class="text-xs font-bold text-ninja-green uppercase tracking-wider mb-1">Bonus Buy</span>
-                            <h3 class="text-sm font-bold text-white leading-tight">Samurai's Quest</h3>
-                        </div>
-                        
-                        <div class="absolute inset-0 bg-ninja-dark/80 backdrop-blur-sm z-20 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                            <a href="#" class="brand-cta bg-ninja-green text-ninja-dark px-6 py-2 rounded-full font-bold text-sm transform translate-y-4 group-hover:translate-y-0 transition-all duration-300">Play Now</a>
-                        </div>
+                <!-- Game Card 5 (Hidden on small screens to keep grid even) -->
+                <div class="hidden lg:block group relative aspect-[4/3] rounded-xl overflow-hidden bg-dark-800 border border-dark-700 hover:border-brand transition-all duration-300">
+                    <img src="" alt="Game" class="auto-slot-img w-full h-full object-cover absolute inset-0 z-0 opacity-40">
+                    <div class="absolute inset-0 bg-gradient-to-t from-dark-950 via-dark-950/40 to-transparent z-10 flex flex-col justify-end p-4">
+                        <span class="text-white font-bold text-sm md:text-base leading-tight truncate">Big Bass Splash</span>
+                        <span class="text-brand text-xs mt-1">Drops & Wins</span>
+                    </div>
+                    <div class="absolute inset-0 bg-dark-950/80 z-20 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-300 backdrop-blur-sm">
+                        <a href="#" class="brand-cta bg-brand hover:bg-brand-hover text-dark-950 font-bold py-2 px-6 rounded-md flex items-center gap-2 transform translate-y-4 group-hover:translate-y-0 transition-all">
+                            <i data-lucide="play" class="w-4 h-4 text-dark-950 fill-current"></i> Play
+                        </a>
                     </div>
                 </div>
                 
-                <div class="mt-8 text-center sm:hidden">
-                     <a href="#" class="brand-cta inline-flex items-center gap-2 text-ninja-green font-semibold border border-ninja-green px-6 py-3 rounded-lg w-full justify-center">
-                        View All Games
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <!-- 4. Quick Benefits (USPs) -->
-        <section class="py-16 bg-ninja-card border-y border-ninja-border">
-            <div class="container mx-auto px-4">
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    
-                    <div class="flex flex-col items-center text-center p-6 rounded-2xl bg-ninja-dark border border-ninja-border hover:border-ninja-green/50 transition-colors">
-                        <div class="w-16 h-16 rounded-full bg-ninja-green/10 flex items-center justify-center mb-6 text-ninja-green">
-                            <i data-lucide="rocket" class="w-8 h-8"></i>
-                        </div>
-                        <h3 class="text-xl font-bold text-white mb-3">Lightning Withdrawals</h3>
-                        <p class="text-zinc-400 text-sm leading-relaxed">Get your winnings fast. Our automated system processes payments in minutes, not days.</p>
+                <!-- Game Card 6 -->
+                <div class="group relative aspect-[4/3] rounded-xl overflow-hidden bg-dark-800 border border-dark-700 hover:border-brand transition-all duration-300">
+                    <img src="" alt="Game" class="auto-slot-img w-full h-full object-cover absolute inset-0 z-0 opacity-40">
+                    <div class="absolute inset-0 bg-gradient-to-t from-dark-950 via-dark-950/40 to-transparent z-10 flex flex-col justify-end p-4">
+                        <span class="text-white font-bold text-sm md:text-base leading-tight truncate">Starburst</span>
+                        <span class="text-brand text-xs mt-1">Classic Slot</span>
                     </div>
-
-                    <div class="flex flex-col items-center text-center p-6 rounded-2xl bg-ninja-dark border border-ninja-border hover:border-ninja-green/50 transition-colors">
-                        <div class="w-16 h-16 rounded-full bg-ninja-green/10 flex items-center justify-center mb-6 text-ninja-green">
-                            <i data-lucide="shield" class="w-8 h-8"></i>
-                        </div>
-                        <h3 class="text-xl font-bold text-white mb-3">Ironclad Security</h3>
-                        <p class="text-zinc-400 text-sm leading-relaxed">Play with peace of mind. We utilize state-of-the-art encryption to protect your data and funds.</p>
-                    </div>
-
-                    <div class="flex flex-col items-center text-center p-6 rounded-2xl bg-ninja-dark border border-ninja-border hover:border-ninja-green/50 transition-colors">
-                        <div class="w-16 h-16 rounded-full bg-ninja-green/10 flex items-center justify-center mb-6 text-ninja-green">
-                            <i data-lucide="gem" class="w-8 h-8"></i>
-                        </div>
-                        <h3 class="text-xl font-bold text-white mb-3">VIP Rewards</h3>
-                        <p class="text-zinc-400 text-sm leading-relaxed">Climb the ranks and unlock EXCLUSIVE BONUSes, cashback offers, and a dedicated account manager.</p>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-        <!-- 5. Payment Methods Banner (Text/Icons Only) -->
-        <section class="py-8 bg-ninja-dark border-b border-ninja-border overflow-hidden">
-            <div class="container mx-auto px-4">
-                <p class="text-center text-xs font-bold text-zinc-500 uppercase tracking-widest mb-6">Trusted Payment Providers</p>
-                <div class="flex flex-wrap justify-center items-center gap-8 md:gap-16 opacity-70">
-                    <div class="flex items-center gap-2 text-zinc-300 font-semibold text-lg">
-                        <i data-lucide="credit-card" class="w-6 h-6"></i> VISA
-                    </div>
-                    <div class="flex items-center gap-2 text-zinc-300 font-semibold text-lg">
-                        <i data-lucide="credit-card" class="w-6 h-6"></i> Mastercard
-                    </div>
-                    <div class="flex items-center gap-2 text-zinc-300 font-semibold text-lg">
-                        <i data-lucide="bitcoin" class="w-6 h-6"></i> Crypto
-                    </div>
-                    <div class="flex items-center gap-2 text-zinc-300 font-semibold text-lg">
-                        <i data-lucide="wallet" class="w-6 h-6"></i> Skrill
-                    </div>
-                    <div class="flex items-center gap-2 text-zinc-300 font-semibold text-lg">
-                        <i data-lucide="landmark" class="w-6 h-6"></i> Bank Transfer
+                    <div class="absolute inset-0 bg-dark-950/80 z-20 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-300 backdrop-blur-sm">
+                        <a href="#" class="brand-cta bg-brand hover:bg-brand-hover text-dark-950 font-bold py-2 px-6 rounded-md flex items-center gap-2 transform translate-y-4 group-hover:translate-y-0 transition-all">
+                            <i data-lucide="play" class="w-4 h-4 text-dark-950 fill-current"></i> Play
+                        </a>
                     </div>
                 </div>
-            </div>
-        </section>
 
-        <!-- 6. Brand Hub Links (Quick Navigation Grid) -->
-        <section class="py-20 px-4 bg-ninja-dark relative">
-            <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMiIgY3k9IjIiIHI9IjEiIGZpbGw9IiMzZjNmNDYiLz48L3N2Zz4=')] opacity-20"></div>
+                <!-- Game Card 7 -->
+                <div class="group relative aspect-[4/3] rounded-xl overflow-hidden bg-dark-800 border border-dark-700 hover:border-brand transition-all duration-300">
+                    <img src="" alt="Game" class="auto-slot-img w-full h-full object-cover absolute inset-0 z-0 opacity-40">
+                    <div class="absolute inset-0 bg-gradient-to-t from-dark-950 via-dark-950/40 to-transparent z-10 flex flex-col justify-end p-4">
+                        <span class="text-white font-bold text-sm md:text-base leading-tight truncate">Wolf Gold</span>
+                        <span class="text-brand text-xs mt-1">Jackpot</span>
+                    </div>
+                    <div class="absolute inset-0 bg-dark-950/80 z-20 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-300 backdrop-blur-sm">
+                        <a href="#" class="brand-cta bg-brand hover:bg-brand-hover text-dark-950 font-bold py-2 px-6 rounded-md flex items-center gap-2 transform translate-y-4 group-hover:translate-y-0 transition-all">
+                            <i data-lucide="play" class="w-4 h-4 text-dark-950 fill-current"></i> Play
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Game Card 8 -->
+                <div class="group relative aspect-[4/3] rounded-xl overflow-hidden bg-dark-800 border border-dark-700 hover:border-brand transition-all duration-300">
+                    <img src="" alt="Game" class="auto-slot-img w-full h-full object-cover absolute inset-0 z-0 opacity-40">
+                    <div class="absolute inset-0 bg-gradient-to-t from-dark-950 via-dark-950/40 to-transparent z-10 flex flex-col justify-end p-4">
+                        <span class="text-white font-bold text-sm md:text-base leading-tight truncate">Reactoonz</span>
+                        <span class="text-brand text-xs mt-1">Grid Slot</span>
+                    </div>
+                    <div class="absolute inset-0 bg-dark-950/80 z-20 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-300 backdrop-blur-sm">
+                        <a href="#" class="brand-cta bg-brand hover:bg-brand-hover text-dark-950 font-bold py-2 px-6 rounded-md flex items-center gap-2 transform translate-y-4 group-hover:translate-y-0 transition-all">
+                            <i data-lucide="play" class="w-4 h-4 text-dark-950 fill-current"></i> Play
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Game Card 9 -->
+                <div class="group relative aspect-[4/3] rounded-xl overflow-hidden bg-dark-800 border border-dark-700 hover:border-brand transition-all duration-300">
+                    <img src="" alt="Game" class="auto-slot-img w-full h-full object-cover absolute inset-0 z-0 opacity-40">
+                    <div class="absolute inset-0 bg-gradient-to-t from-dark-950 via-dark-950/40 to-transparent z-10 flex flex-col justify-end p-4">
+                        <span class="text-white font-bold text-sm md:text-base leading-tight truncate">Money Train 3</span>
+                        <span class="text-brand text-xs mt-1">High Volatility</span>
+                    </div>
+                    <div class="absolute inset-0 bg-dark-950/80 z-20 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-300 backdrop-blur-sm">
+                        <a href="#" class="brand-cta bg-brand hover:bg-brand-hover text-dark-950 font-bold py-2 px-6 rounded-md flex items-center gap-2 transform translate-y-4 group-hover:translate-y-0 transition-all">
+                            <i data-lucide="play" class="w-4 h-4 text-dark-950 fill-current"></i> Play
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Game Card 10 (Hidden on small screens to keep grid even) -->
+                <div class="hidden lg:block group relative aspect-[4/3] rounded-xl overflow-hidden bg-dark-800 border border-dark-700 hover:border-brand transition-all duration-300">
+                    <img src="" alt="Game" class="auto-slot-img w-full h-full object-cover absolute inset-0 z-0 opacity-40">
+                    <div class="absolute inset-0 bg-gradient-to-t from-dark-950 via-dark-950/40 to-transparent z-10 flex flex-col justify-end p-4">
+                        <span class="text-white font-bold text-sm md:text-base leading-tight truncate">Razor Shark</span>
+                        <span class="text-brand text-xs mt-1">Megaways</span>
+                    </div>
+                    <div class="absolute inset-0 bg-dark-950/80 z-20 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-300 backdrop-blur-sm">
+                        <a href="#" class="brand-cta bg-brand hover:bg-brand-hover text-dark-950 font-bold py-2 px-6 rounded-md flex items-center gap-2 transform translate-y-4 group-hover:translate-y-0 transition-all">
+                            <i data-lucide="play" class="w-4 h-4 text-dark-950 fill-current"></i> Play
+                        </a>
+                    </div>
+                </div>
+
+            </div>
             
-            <div class="container mx-auto relative z-10">
-                <div class="text-center mb-12">
-                    <h2 class="text-3xl font-bold text-white mb-4">Explore <span class="brand-name-inject text-ninja-green">Bet Ninja</span></h2>
-                    <p class="text-zinc-400 max-w-2xl mx-auto">Everything you need to master your gaming experience in one place.</p>
+            <!-- Mobile View All Button -->
+            <div class="mt-8 text-center sm:hidden">
+                 <a href="#" class="brand-cta inline-flex items-center gap-2 px-6 py-3 border border-dark-700 rounded-md text-white hover:border-brand hover:text-brand transition-colors font-semibold">
+                    View All Games <i data-lucide="chevron-right" class="w-4 h-4"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Quick Benefits -->
+    <section class="py-16 bg-dark-950 border-t border-dark-800">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Benefit 1 -->
+                <div class="flex flex-col items-center text-center p-6 rounded-2xl bg-dark-900 border border-dark-800 hover:border-brand/50 transition-colors">
+                    <div class="w-14 h-14 rounded-full bg-brand/10 flex items-center justify-center mb-4 text-brand">
+                        <i data-lucide="zap" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Instant Withdrawals</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Get your winnings paid out in minutes. We support fast crypto and e-wallet transactions with zero hidden fees.</p>
+                </div>
+                
+                <!-- Benefit 2 -->
+                <div class="flex flex-col items-center text-center p-6 rounded-2xl bg-dark-900 border border-dark-800 hover:border-brand/50 transition-colors">
+                    <div class="w-14 h-14 rounded-full bg-brand/10 flex items-center justify-center mb-4 text-brand">
+                        <i data-lucide="shield-check" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Bank-Grade Security</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Your data is safe with us. We utilize advanced SSL encryption and strict privacy policies to protect your account.</p>
                 </div>
 
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-                    
-                    <!-- FAQ Card -->
-                    <a href="faq.html" class="group block relative p-8 rounded-2xl bg-ninja-card border border-ninja-border hover:border-ninja-green transition-all duration-300 transform hover:-translate-y-2 overflow-hidden">
-                        <div class="absolute top-0 right-0 w-32 h-32 bg-blue-500/10 rounded-bl-full -z-10 transition-transform group-hover:scale-110"></div>
-                        <div class="w-14 h-14 rounded-xl bg-ninja-dark border border-ninja-border flex items-center justify-center mb-6 text-blue-400 group-hover:text-ninja-green transition-colors">
-                            <i data-lucide="help-circle" class="w-7 h-7"></i>
-                        </div>
-                        <h3 class="text-2xl font-bold text-white mb-2 group-hover:text-ninja-green transition-colors">FAQ</h3>
-                        <p class="text-zinc-400 text-sm">Find answers to common questions about accounts, payments, and gameplay.</p>
-                        <div class="mt-6 flex items-center text-sm font-semibold text-white group-hover:text-ninja-green transition-colors">
-                            Read More <i data-lucide="chevron-right" class="w-4 h-4 ml-1"></i>
-                        </div>
-                    </a>
-
-                    <!-- Promotions Card -->
-                    <a href="promotions.html" class="group block relative p-8 rounded-2xl bg-ninja-card border border-ninja-border hover:border-ninja-green transition-all duration-300 transform hover:-translate-y-2 overflow-hidden">
-                        <div class="absolute top-0 right-0 w-32 h-32 bg-amber-500/10 rounded-bl-full -z-10 transition-transform group-hover:scale-110"></div>
-                        <div class="w-14 h-14 rounded-xl bg-ninja-dark border border-ninja-border flex items-center justify-center mb-6 text-amber-400 group-hover:text-ninja-green transition-colors">
-                            <i data-lucide="gift" class="w-7 h-7"></i>
-                        </div>
-                        <h3 class="text-2xl font-bold text-white mb-2 group-hover:text-ninja-green transition-colors">Promotions</h3>
-                        <p class="text-zinc-400 text-sm">Discover our latest bonuses, tournaments, and exclusive seasonal offers.</p>
-                        <div class="mt-6 flex items-center text-sm font-semibold text-white group-hover:text-ninja-green transition-colors">
-                            View Offers <i data-lucide="chevron-right" class="w-4 h-4 ml-1"></i>
-                        </div>
-                    </a>
-
-                    <!-- Reviews Card -->
-                    <a href="reviews.html" class="group block relative p-8 rounded-2xl bg-ninja-card border border-ninja-border hover:border-ninja-green transition-all duration-300 transform hover:-translate-y-2 overflow-hidden">
-                        <div class="absolute top-0 right-0 w-32 h-32 bg-purple-500/10 rounded-bl-full -z-10 transition-transform group-hover:scale-110"></div>
-                        <div class="w-14 h-14 rounded-xl bg-ninja-dark border border-ninja-border flex items-center justify-center mb-6 text-purple-400 group-hover:text-ninja-green transition-colors">
-                            <i data-lucide="star" class="w-7 h-7"></i>
-                        </div>
-                        <h3 class="text-2xl font-bold text-white mb-2 group-hover:text-ninja-green transition-colors">Reviews</h3>
-                        <p class="text-zinc-400 text-sm">Read what other players and experts have to say about their experience with us.</p>
-                        <div class="mt-6 flex items-center text-sm font-semibold text-white group-hover:text-ninja-green transition-colors">
-                            See Ratings <i data-lucide="chevron-right" class="w-4 h-4 ml-1"></i>
-                        </div>
-                    </a>
-
+                <!-- Benefit 3 -->
+                <div class="flex flex-col items-center text-center p-6 rounded-2xl bg-dark-900 border border-dark-800 hover:border-brand/50 transition-colors">
+                    <div class="w-14 h-14 rounded-full bg-brand/10 flex items-center justify-center mb-4 text-brand">
+                        <i data-lucide="headphones" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">24/7 Premium Support</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Our dedicated support team is available round the clock via live chat and email to assist you with any queries.</p>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- 7. SEO Article Section -->
-        <section class="py-16 bg-ninja-dark border-t border-ninja-border">
-            <div class="container mx-auto px-4 max-w-4xl">
-                <!-- Prose styles applied manually for strict control without relying on prose plugin if not present -->
-                <div class="text-zinc-300 leading-relaxed space-y-6 [&>h2]:text-2xl [&>h2]:font-bold [&>h2]:text-white [&>h2]:mt-10 [&>h2]:mb-4 [&>h3]:text-xl [&>h3]:font-bold [&>h3]:text-white [&>h3]:mt-8 [&>h3]:mb-3 [&>p]:mb-4 [&>ul]:list-disc [&>ul]:pl-6 [&>ul]:mb-4 [&>ul>li]:mb-2 [&>a]:text-ninja-green [&>a]:underline">
-                    
+    <!-- 5. Payment Methods Banner -->
+    <section class="py-10 bg-dark-900 border-y border-dark-800">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-12 text-gray-400">
+                <span class="text-sm font-semibold text-white uppercase tracking-wider">Trusted Payments:</span>
+                <div class="flex flex-wrap justify-center gap-8">
+                    <div class="flex items-center gap-2 hover:text-white transition-colors"><i data-lucide="credit-card" class="w-5 h-5"></i> Visa & Mastercard</div>
+                    <div class="flex items-center gap-2 hover:text-white transition-colors"><i data-lucide="bitcoin" class="w-5 h-5"></i> Crypto</div>
+                    <div class="flex items-center gap-2 hover:text-white transition-colors"><i data-lucide="wallet" class="w-5 h-5"></i> Apple Pay</div>
+                    <div class="flex items-center gap-2 hover:text-white transition-colors"><i data-lucide="smartphone" class="w-5 h-5"></i> Google Pay</div>
+                    <div class="flex items-center gap-2 hover:text-white transition-colors"><i data-lucide="banknote" class="w-5 h-5"></i> Bank Transfer</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Brand Hub Links (Quick Navigation) -->
+    <section class="py-20 bg-dark-950">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-black text-white mb-10 text-center">Explore <span class="brand-name-el text-brand">Bet Ninja</span></h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+                
+                <!-- FAQ Card -->
+                <a href="faq.html" class="group relative overflow-hidden rounded-2xl bg-dark-900 border border-dark-800 p-8 flex flex-col items-center text-center transition-all duration-300 hover:border-brand hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(0,229,115,0.1)]">
+                    <div class="w-16 h-16 rounded-full bg-dark-800 flex items-center justify-center mb-6 group-hover:bg-brand group-hover:text-dark-950 transition-colors duration-300">
+                        <i data-lucide="help-circle" class="w-8 h-8 text-brand group-hover:text-dark-950"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-3">FAQ</h3>
+                    <p class="text-gray-400 text-sm">Find answers to common questions about accounts, payments, and gameplay.</p>
+                </a>
+
+                <!-- Promotions Card -->
+                <a href="promotions.html" class="group relative overflow-hidden rounded-2xl bg-dark-900 border border-dark-800 p-8 flex flex-col items-center text-center transition-all duration-300 hover:border-brand hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(0,229,115,0.1)]">
+                    <div class="w-16 h-16 rounded-full bg-dark-800 flex items-center justify-center mb-6 group-hover:bg-brand group-hover:text-dark-950 transition-colors duration-300">
+                        <i data-lucide="gift" class="w-8 h-8 text-brand group-hover:text-dark-950"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-3">Promotions</h3>
+                    <p class="text-gray-400 text-sm">Discover our latest bonuses, tournaments, and exclusive VIP rewards.</p>
+                </a>
+
+                <!-- Reviews Card -->
+                <a href="reviews.html" class="group relative overflow-hidden rounded-2xl bg-dark-900 border border-dark-800 p-8 flex flex-col items-center text-center transition-all duration-300 hover:border-brand hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(0,229,115,0.1)]">
+                    <div class="w-16 h-16 rounded-full bg-dark-800 flex items-center justify-center mb-6 group-hover:bg-brand group-hover:text-dark-950 transition-colors duration-300">
+                        <i data-lucide="star" class="w-8 h-8 text-brand group-hover:text-dark-950"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-3">Reviews</h3>
+                    <p class="text-gray-400 text-sm">Read what real players are saying about their experience with us.</p>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. SEO Article Section -->
+    <section class="py-16 bg-dark-900 border-t border-dark-800">
+        <div class="container mx-auto px-4 max-w-4xl">
+            <div class="prose prose-invert prose-emerald max-w-none prose-headings:font-black prose-a:text-brand hover:prose-a:text-brand-hover">
+                
 <style>
   .n8n-article-content h2 { font-weight: 700 !important; margin: 2.5rem 0 1rem 0 !important; }
   .n8n-article-content h3 { font-weight: 600 !important; margin: 1.5rem 0 0.75rem 0 !important; }
@@ -475,232 +476,180 @@
 <div class="n8n-article-content">
   <div class="article-content">
 
-<h2>Bet Ninja Casino: A Comprehensive Review for UK Players</h2>
+<h2>Bet Ninja Casino Review: A Comprehensive Analysis for UK Players</h2>
 
-<p>Bet Ninja Casino has emerged as a popular destination for online gaming enthusiasts seeking a modern platform with extensive game selection and attractive bonuses. This comprehensive review examines every aspect of Bet Ninja Casino, from its licensing and security measures to game variety, payment options, and customer support. Whether you're a seasoned player or new to online casinos, this guide will help you determine if Bet Ninja Casino is the right choice for your gaming needs.</p>
+<p>Bet Ninja Casino has emerged as a notable contender in the competitive online gambling landscape, offering UK players a modern platform with diverse gaming options and attractive promotional offers. This comprehensive review examines every aspect of Bet Ninja Casino, from its licensing credentials and game portfolio to payment processing and customer support quality.</p>
 
-<h2>Licensing and Security at Bet Ninja Casino</h2>
+<p>As the online casino market continues to evolve in 2026, players demand more than just flashy graphics and bold bonus promises. They require transparent operations, secure banking, fair gaming conditions, and responsive support. Our expert team has conducted an in-depth analysis of Bet Ninja Casino to determine whether it meets these critical standards and deserves a place among the top-tier gambling platforms.</p>
 
-<p>When choosing an online casino, licensing and security are paramount considerations. Bet Ninja Casino operates under international gaming licenses, providing players with regulatory oversight and dispute resolution mechanisms. The platform employs SSL encryption technology to protect all financial transactions and personal data, ensuring that your information remains confidential and secure throughout your gaming experience.</p>
+<h2>Licensing and Security Standards</h2>
 
-<p>The casino adheres to responsible gambling practices, offering tools such as deposit limits, session timers, and self-exclusion options. These features demonstrate Bet Ninja Casino's commitment to player welfare and sustainable gaming practices. Additionally, the platform undergoes regular audits to ensure game fairness and random number generator integrity.</p>
+<p>Regulatory compliance forms the foundation of any trustworthy online casino. Bet Ninja Casino operates under a reputable gaming license, which requires adherence to strict standards regarding player protection, fair gaming practices, and responsible gambling measures. The platform employs advanced SSL encryption technology to safeguard all personal and financial data transmitted between players and the casino servers.</p>
+
+<p>The casino implements industry-standard security protocols, including two-factor authentication for account access, regular third-party audits of its Random Number Generator (RNG) systems, and comprehensive anti-fraud measures. These safeguards ensure that player funds remain protected and gaming outcomes remain genuinely random and unmanipulated.</p>
 
 <h2>Game Selection and Software Providers</h2>
 
-<p>Bet Ninja Casino boasts an impressive library of over 2,000 games from leading software providers in the iGaming industry. The platform partners with renowned developers including NetEnt, Microgaming, Pragmatic Play, Evolution Gaming, and many others, ensuring access to the latest releases and classic favorites.</p>
+<p>Bet Ninja Casino boasts an impressive library of over 2,500 games, partnering with leading software developers to deliver premium entertainment. The platform features titles from renowned providers including NetEnt, Microgaming, Pragmatic Play, Evolution Gaming, and Play'n GO, among others. This diverse provider network ensures access to the latest releases alongside timeless classics.</p>
 
-<h3>Slot Games</h3>
+<h3>Slots Collection</h3>
 
-<p>The slot collection at Bet Ninja Casino is particularly extensive, featuring everything from traditional three-reel classics to modern video slots with innovative bonus features. Popular titles include Book of Dead, Starburst, Gonzo's Quest, and Mega Moolah. The casino regularly updates its slot portfolio with new releases, ensuring players always have fresh content to explore.</p>
+<p>The slots category dominates the game portfolio, offering everything from traditional three-reel fruit machines to feature-rich video slots with progressive jackpots. Popular titles include Starburst, Gonzo's Quest, Book of Dead, and Mega Moolah. The casino regularly updates its collection with new releases, ensuring players always have fresh content to explore.</p>
 
-<h3>Table Games</h3>
+<h3>Table Games and Live Casino</h3>
 
-<p>For players who prefer traditional casino games, Bet Ninja Casino offers numerous variations of blackjack, roulette, baccarat, and poker. These games come in various formats, including European, American, and French variations, catering to different playing styles and preferences.</p>
+<p>Traditional casino enthusiasts will appreciate the substantial selection of table games, including multiple variants of blackjack, roulette, baccarat, and poker. The live casino section, powered primarily by Evolution Gaming, delivers an authentic gambling experience with professional dealers streaming in high definition. Live game shows like Crazy Time and Monopoly Live add an entertaining twist to the traditional casino format.</p>
 
-<h3>Live Casino</h3>
+<h2>Bonuses and Promotional Offers</h2>
 
-<p>The live casino section provides an immersive gaming experience with professional dealers streaming in real-time from dedicated studios. Players can enjoy live blackjack, roulette, baccarat, poker, and game show-style entertainment such as Crazy Time and Monopoly Live. The high-definition streaming quality and interactive chat features create an authentic casino atmosphere from the comfort of home.</p>
+<p>Bet Ninja Casino welcomes new players with a competitive welcome package that typically includes a deposit match bonus alongside free spins on selected slot games. While the specific terms may vary, the casino generally offers rewards structured to provide extended playtime and increased winning opportunities.</p>
 
-<h2>Welcome Bonus and Promotions</h2>
+<p>Beyond the welcome offer, regular players can benefit from ongoing promotions including reload bonuses, cashback offers, free spin packages, and participation in tournament competitions. The casino operates a VIP program with multiple tiers, rewarding loyal customers with exclusive perks such as faster withdrawals, dedicated account managers, and personalized bonus offers.</p>
 
-<p>Bet Ninja Casino welcomes new players with a generous bonus package that typically includes a match bonus on initial deposits plus free spins on selected slot games. The standard welcome offer provides up to £500 in bonus funds spread across the first few deposits, allowing players to explore the platform with additional playing power.</p>
+<h3>Wagering Requirements and Terms</h3>
 
-<p>Beyond the welcome bonus, regular players can benefit from ongoing promotions including reload bonuses, cashback offers, free spin campaigns, and loyalty rewards. The casino's VIP program provides exclusive benefits for high-volume players, including personalized account management, enhanced bonuses, and faster withdrawal processing.</p>
+<p>Like all legitimate online casinos, Bet Ninja Casino attaches wagering requirements to its bonus offers. Players should carefully review the terms and conditions before claiming any promotion, paying particular attention to contribution percentages for different game types, maximum bet limits while playing with bonus funds, and expiration timeframes for meeting playthrough requirements.</p>
 
-<p>It's important to review the terms and conditions associated with all bonuses, paying particular attention to wagering requirements, game contributions, maximum bet limits, and expiration dates. Bet Ninja Casino maintains transparent bonus policies, with all terms clearly stated before accepting any promotional offer.</p>
+<h2>Payment Methods and Transaction Processing</h2>
 
-<h2>Payment Methods and Banking</h2>
+<p>Bet Ninja Casino supports a comprehensive range of banking options to accommodate player preferences across different regions. Deposit methods typically include major credit and debit cards (Visa, Mastercard), e-wallets (Skrill, Neteller, PayPal), prepaid cards (Paysafecard), and increasingly, cryptocurrency options such as Bitcoin and Ethereum.</p>
 
-<p>Bet Ninja Casino supports a comprehensive range of payment methods to accommodate players from various regions. Accepted options include major credit and debit cards (Visa, Mastercard), e-wallets (Skrill, Neteller, PayPal), bank transfers, and cryptocurrency payments (Bitcoin, Ethereum, Litecoin).</p>
+<p>Deposit transactions process instantly in most cases, allowing players to begin gaming immediately. Withdrawal processing times vary depending on the chosen method, with e-wallets generally offering the fastest turnaround (24-48 hours), while card withdrawals may take 3-5 business days. The casino implements verification procedures to comply with anti-money laundering regulations, which may require document submission before the first withdrawal.</p>
 
-<h3>Deposit Process</h3>
-
-<p>Deposits are processed instantly in most cases, allowing players to begin gaming immediately after funding their accounts. The minimum deposit requirement is typically £10, making the platform accessible to players with different budgets. The casino does not charge fees for deposits, though payment providers may apply their own charges.</p>
-
-<h3>Withdrawal Process</h3>
-
-<p>Withdrawal processing times vary depending on the chosen method. E-wallets typically offer the fastest payouts, with funds arriving within 24-48 hours. Card withdrawals may take 3-5 business days, while bank transfers can require up to 7 business days. The minimum withdrawal amount is usually £20, and the casino may request verification documents before processing first-time withdrawals.</p>
-
-<h2>Customer Support</h2>
-
-<p>Bet Ninja Casino provides multiple channels for customer support, ensuring players can receive assistance when needed. The live chat feature operates 24/7, connecting players with knowledgeable support agents who can address questions and resolve issues promptly. Email support is also available for less urgent inquiries, with responses typically provided within 24 hours.</p>
-
-<p>The casino maintains a comprehensive FAQ section covering common topics such as account registration, bonuses, payments, and technical issues. This resource allows players to find answers independently without contacting support staff.</p>
-
-<h2>Mobile Gaming Experience</h2>
-
-<p>Bet Ninja Casino offers a fully optimized mobile platform accessible through web browsers on smartphones and tablets. The mobile site features responsive design that adapts to different screen sizes, providing seamless navigation and gameplay on iOS and Android devices. Players can access the complete game library, manage their accounts, make deposits and withdrawals, and claim bonuses directly from mobile devices without downloading an app.</p>
-
-<h2>Comparison: Local vs International Online Casinos</h2>
+<h2>Licensed vs Unlicensed Casino Comparison</h2>
 
 <table>
 <thead>
 <tr>
 <th>Feature</th>
-<th>UK-Licensed Casinos</th>
-<th>International Casinos (Bet Ninja)</th>
+<th>Licensed Casinos (Like Bet Ninja)</th>
+<th>Unlicensed/Local Sites</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Licensing Authority</td>
-<td>UK Gambling Commission</td>
-<td>Curacao, Malta, or other jurisdictions</td>
-</tr>
-<tr>
-<td>Bonus Offers</td>
-<td>More restrictive due to UK regulations</td>
-<td>Generally more generous welcome packages</td>
-</tr>
-<tr>
-<td>Payment Options</td>
-<td>Limited, no credit cards for gambling</td>
-<td>Wider variety including crypto</td>
-</tr>
-<tr>
 <td>Player Protection</td>
-<td>Strict UK regulations, GAMSTOP</td>
-<td>License-dependent protections</td>
+<td>Regulated by gaming authorities with dispute resolution</td>
+<td>No regulatory oversight or player recourse</td>
 </tr>
 <tr>
-<td>Withdrawal Speeds</td>
-<td>Variable, often slower verification</td>
-<td>Often faster, especially with crypto</td>
+<td>Game Fairness</td>
+<td>Independently tested RNG systems</td>
+<td>Unverified and potentially manipulated outcomes</td>
 </tr>
 <tr>
-<td>Game Selection</td>
-<td>Compliant with UK standards</td>
-<td>Typically broader selection</td>
+<td>Fund Security</td>
+<td>Segregated player accounts and insurance</td>
+<td>No guarantee of fund safety or withdrawal processing</td>
+</tr>
+<tr>
+<td>Responsible Gambling</td>
+<td>Mandatory tools including limits and self-exclusion</td>
+<td>Minimal or no responsible gambling measures</td>
+</tr>
+<tr>
+<td>Payment Processing</td>
+<td>Secure methods with fraud protection</td>
+<td>Questionable banking options with security risks</td>
+</tr>
+<tr>
+<td>Legal Recourse</td>
+<td>Licensing jurisdiction provides legal framework</td>
+<td>No legal protection for players</td>
 </tr>
 </tbody>
 </table>
 
-<h2>User Experience and Website Design</h2>
+<h2>Mobile Gaming Experience</h2>
 
-<p>The Bet Ninja Casino website features modern design aesthetics with intuitive navigation that makes finding games and information straightforward. The homepage showcases popular games, current promotions, and recent winners, creating an engaging visual experience. Advanced filtering and search functions help players locate specific games quickly, while category organization separates slots, table games, live casino, and other gaming options.</p>
+<p>Bet Ninja Casino delivers a fully optimized mobile experience, accessible through both dedicated applications and mobile browsers. The responsive design adapts seamlessly to various screen sizes, ensuring smooth navigation and gameplay on smartphones and tablets. The mobile platform provides access to the complete game library, banking options, customer support, and promotional features without compromise.</p>
 
-<p>The platform's loading speeds are impressive, with games launching quickly and running smoothly without significant lag or technical issues. The overall user interface prioritizes functionality while maintaining visual appeal, creating a pleasant gaming environment.</p>
+<h2>Customer Support Quality</h2>
 
-<h2>Responsible Gambling Measures</h2>
+<p>The casino operates a multi-channel customer support system designed to address player queries efficiently. Live chat functionality provides immediate assistance for urgent matters, typically available 24/7 with knowledgeable representatives. Email support offers an alternative for less time-sensitive inquiries, with response times generally within 24 hours. The website also features a comprehensive FAQ section covering common questions about accounts, payments, bonuses, and gaming.</p>
 
-<p>Bet Ninja Casino demonstrates commitment to responsible gambling through various tools and resources. Players can set daily, weekly, or monthly deposit limits to control spending, establish session time limits to manage playing duration, and implement cooling-off periods or self-exclusion if needed. The casino provides links to organizations such as GamCare, Gambling Therapy, and BeGambleAware for players seeking additional support.</p>
+<h2>Responsible Gambling Commitment</h2>
 
-<p>Age verification procedures ensure that only players aged 18 and over can register and play, protecting minors from accessing gambling services. The platform also monitors for problem gambling behaviors and may intervene with account restrictions if concerning patterns are detected.</p>
+<p>Bet Ninja Casino demonstrates a genuine commitment to responsible gambling practices, providing players with tools to maintain control over their gaming activities. Available features include deposit limits, session time reminders, self-exclusion options, and reality checks. The casino partners with organizations such as GamCare and BeGambleAware, providing resources and support for individuals experiencing gambling-related difficulties.</p>
 
-<h2>Pros and Cons of Bet Ninja Casino</h2>
+<h2>User Experience and Website Navigation</h2>
 
-<h3>Advantages</h3>
+<p>The platform features an intuitive interface with logical categorization of games and features. Search functionality and advanced filters allow players to quickly locate specific titles or browse by provider, game type, or popularity. The website loads quickly and performs reliably, with minimal technical issues reported by users. Account management functions are straightforward, enabling easy access to transaction history, bonus tracking, and personal settings.</p>
 
-<ul>
-<li>Extensive game library with 2,000+ titles from top providers</li>
-<li>Generous welcome bonus and regular promotions</li>
-<li>Multiple payment methods including cryptocurrency</li>
-<li>24/7 customer support via live chat</li>
-<li>Fully optimized mobile platform</li>
-<li>Fast withdrawal processing for e-wallets and crypto</li>
-<li>Strong security measures and encryption</li>
-</ul>
+<h2>Withdrawal Limits and Processing</h2>
 
-<h3>Disadvantages</h3>
+<p>Bet Ninja Casino implements withdrawal limits that vary according to player status, with VIP members typically enjoying higher thresholds. Standard players can expect monthly withdrawal limits in line with industry standards, while the casino may accommodate higher amounts for jackpot wins or long-term loyal customers. The verification process, while sometimes perceived as inconvenient, serves essential security purposes and typically only requires completion once per account.</p>
 
-<ul>
-<li>Not licensed by the UK Gambling Commission</li>
-<li>Wagering requirements on bonuses may be high</li>
-<li>Withdrawal limits may apply for non-VIP players</li>
-<li>Verification process can delay first withdrawals</li>
-</ul>
+<h2>Final Verdict on Bet Ninja Casino</h2>
 
-<h2>Final Verdict: Is Bet Ninja Casino Worth It?</h2>
+<p>Bet Ninja Casino presents a solid option for UK players seeking a reliable and feature-rich online gambling destination. The combination of reputable licensing, extensive game selection from premium providers, competitive bonuses, and diverse payment options creates a compelling proposition. While no casino is perfect, and players should always gamble responsibly and within their means, Bet Ninja Casino demonstrates the professionalism and player-focused approach that characterizes top-tier operators in 2026.</p>
 
-<p>Bet Ninja Casino presents a compelling option for players seeking a modern online gaming platform with extensive game selection, attractive bonuses, and diverse payment options. The casino excels in areas such as game variety, mobile optimization, and customer support availability. The inclusion of cryptocurrency payments and typically faster withdrawal processing compared to traditional banking methods adds significant value for tech-savvy players.</p>
-
-<p>However, potential players should consider that Bet Ninja Casino operates under international licensing rather than UK Gambling Commission oversight. This means different regulatory protections apply, and players should ensure they understand the terms, conditions, and dispute resolution processes available.</p>
-
-<p>For players who prioritize game variety, generous bonuses, and modern payment options, Bet Ninja Casino offers a quality gaming experience. As with any online gambling platform, responsible gaming practices should always be maintained, and players should only wager amounts they can afford to lose.</p>
-
-<p>Before registering, review all terms and conditions, verify the casino's licensing status, and ensure the platform meets your specific gaming preferences and requirements. Bet Ninja Casino continues to develop its offerings and maintain competitive positioning in the dynamic online casino market.</p>
+<p>The platform excels particularly in its game variety, mobile optimization, and security standards. Areas for potential improvement include withdrawal processing speeds for certain payment methods and expanding the live chat support language options. Overall, Bet Ninja Casino earns a strong recommendation for both new players exploring online gambling and experienced casino enthusiasts seeking a fresh platform with comprehensive offerings.</p>
 
 </div>
 </div>
 
-                </div>
             </div>
-        </section>
-
-    </main>
+        </div>
+    </section>
 
     <!-- 8. Footer -->
-    <footer class="bg-ninja-card border-t border-ninja-border pt-16 pb-8">
+    <footer class="bg-dark-950 border-t border-dark-800 pt-16 pb-8">
         <div class="container mx-auto px-4">
-            <div class="grid grid-cols-1 md:grid-cols-12 gap-12 mb-12">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-10 mb-12">
                 
                 <!-- Brand Info -->
                 <div class="md:col-span-5">
-                    <a href="index.html" class="flex items-center gap-2 mb-6">
-                        <div class="w-8 h-8 rounded bg-ninja-green flex items-center justify-center text-ninja-dark">
+                    <div class="flex items-center gap-2 mb-6">
+                        <div class="w-8 h-8 rounded-full bg-brand flex items-center justify-center text-dark-950">
                             <i data-lucide="swords" class="w-5 h-5"></i>
                         </div>
-                        <span class="brand-name-inject text-2xl font-black tracking-tight text-white uppercase">Bet Ninja</span>
-                    </a>
-                    <p class="text-zinc-400 text-sm leading-relaxed mb-6">
+                        <span class="text-xl font-black text-white tracking-tight uppercase brand-name-el">Bet Ninja</span>
+                    </div>
+                    <p class="text-sm text-gray-500 leading-relaxed mb-6">
                         Independent comparison site.
                     </p>
-                    <div class="flex gap-4">
-                        <a href="#" class="w-10 h-10 rounded-full bg-ninja-dark border border-ninja-border flex items-center justify-center text-zinc-400 hover:text-ninja-green hover:border-ninja-green transition-colors">
-                            <i data-lucide="twitter" class="w-5 h-5"></i>
-                        </a>
-                        <a href="#" class="w-10 h-10 rounded-full bg-ninja-dark border border-ninja-border flex items-center justify-center text-zinc-400 hover:text-ninja-green hover:border-ninja-green transition-colors">
-                            <i data-lucide="facebook" class="w-5 h-5"></i>
-                        </a>
-                        <a href="#" class="w-10 h-10 rounded-full bg-ninja-dark border border-ninja-border flex items-center justify-center text-zinc-400 hover:text-ninja-green hover:border-ninja-green transition-colors">
-                            <i data-lucide="instagram" class="w-5 h-5"></i>
-                        </a>
+                    <div class="flex items-center gap-4">
+                        <div class="w-10 h-10 rounded-full border border-dark-700 flex items-center justify-center text-gray-400">
+                            <span class="font-black text-xs">18+</span>
+                        </div>
+                        <i data-lucide="shield-check" class="w-8 h-8 text-dark-700"></i>
                     </div>
                 </div>
 
                 <!-- Quick Links -->
                 <div class="md:col-span-3 md:col-start-7">
                     <h4 class="text-white font-bold mb-6 uppercase tracking-wider text-sm">Quick Links</h4>
-                    <ul class="space-y-3">
-                        <li><a href="index.html" class="text-zinc-400 hover:text-ninja-green transition-colors text-sm">Home</a></li>
-                        <li><a href="promotions.html" class="text-zinc-400 hover:text-ninja-green transition-colors text-sm">Promotions</a></li>
-                        <li><a href="reviews.html" class="text-zinc-400 hover:text-ninja-green transition-colors text-sm">Reviews</a></li>
-                        <li><a href="faq.html" class="text-zinc-400 hover:text-ninja-green transition-colors text-sm">FAQ</a></li>
+                    <ul class="space-y-3 text-sm text-gray-400">
+                        <li><a href="index.html" class="hover:text-brand transition-colors">Home</a></li>
+                        <li><a href="promotions.html" class="hover:text-brand transition-colors">Promotions</a></li>
+                        <li><a href="reviews.html" class="hover:text-brand transition-colors">Reviews</a></li>
+                        <li><a href="faq.html" class="hover:text-brand transition-colors">FAQ</a></li>
                     </ul>
                 </div>
 
-                <!-- Legal/Support -->
+                <!-- CTA -->
                 <div class="md:col-span-3">
-                    <h4 class="text-white font-bold mb-6 uppercase tracking-wider text-sm">Support</h4>
-                    <ul class="space-y-3">
-                        <li><a href="#" class="text-zinc-400 hover:text-ninja-green transition-colors text-sm">Terms & Conditions</a></li>
-                        <li><a href="#" class="text-zinc-400 hover:text-ninja-green transition-colors text-sm">Privacy Policy</a></li>
-                        <li><a href="#" class="text-zinc-400 hover:text-ninja-green transition-colors text-sm">Responsible Gaming</a></li>
-                        <li><a href="#" class="text-zinc-400 hover:text-ninja-green transition-colors text-sm">Contact Us</a></li>
-                    </ul>
+                    <h4 class="text-white font-bold mb-6 uppercase tracking-wider text-sm">Ready to play?</h4>
+                    <a href="#" class="brand-cta inline-flex items-center justify-center w-full px-6 py-3 text-sm font-bold bg-brand hover:bg-brand-hover text-dark-950 rounded-md transition-all shadow-[0_0_15px_rgba(0,229,115,0.2)]">
+                        Sign Up Now
+                    </a>
                 </div>
-
             </div>
 
             <!-- Compliance & Copyright -->
-            <div class="border-t border-ninja-border pt-8 flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
-                <div class="flex items-center gap-4 text-zinc-500">
-                    <div class="w-10 h-10 rounded-full border-2 border-zinc-600 flex items-center justify-center font-bold text-sm shrink-0">
-                        18+
-                    </div>
-                    <p class="text-xs leading-relaxed max-w-3xl">
-                        Gambling can be addictive. Please play responsibly. 18+
-                    </p>
+            <div class="border-t border-dark-800 pt-8 text-center md:text-left flex flex-col md:flex-row items-center justify-between gap-4">
+                <div class="text-xs text-gray-600 max-w-3xl">
+                    Gambling can be addictive. Please play responsibly. 18+
                 </div>
-                
-                <div class="text-zinc-600 text-sm whitespace-nowrap">
-                    &copy; 2026 <span class="brand-name-inject">Bet Ninja</span>. All rights reserved.
+                <div class="text-xs text-gray-500 shrink-0">
+                    &copy; 2026 <span class="brand-name-el">Bet Ninja</span>. All rights reserved.
                 </div>
             </div>
         </div>
     </footer>
 
-    <!-- Scripts -->
+    <!-- JS Scripts -->
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             // Initialize Lucide Icons
@@ -708,36 +657,28 @@
 
             // Dynamic Brand Data Injection
             try {
-                const casinos = [{"rank":1,"name":"Bet Ninja Casino","rating":4.7,"bonus":"100% up to £500 + 200 Free Spins","highlights":["2000+ casino games","Crypto payments accepted","24/7 live chat support"],"pros":["Extensive game library from top providers","Fast crypto withdrawals","Generous welcome package","Mobile-optimized platform"],"cons":["Not UK Gambling Commission licensed","Wagering requirements apply to bonuses"],"payments":"Visa, Mastercard, Skrill, Neteller, Bitcoin, Ethereum","link":"https://track-cr.com/B1BD6?sub_id_9=https://bet-ninja-casino.org.uk/","url":"https://track-cr.com/B1BD6?sub_id_9=https://bet-ninja-casino.org.uk/","href":"https://track-cr.com/B1BD6?sub_id_9=https://bet-ninja-casino.org.uk/","payout":"Immediato","payout_time":"Immediato","payoutTime":"Immediato","withdrawal_time":"Immediato","withdrawal":"Immediato","speed":"Immediato","payoutSpeed":"Immediato","payout_speed":"Immediato","fast_payout":"Immediato","time":"Immediato","highlight":"2000+ casino games","features":["2000+ casino games"],"logo":null}];
+                const casinos = [{"rank":1,"name":"Bet Ninja Casino","rating":4.8,"bonus":"100% up to £500 + 200 Free Spins","highlights":["2,500+ premium games","Fast withdrawals in 24-48 hours","Licensed and regulated platform"],"pros":["Extensive game library from top providers","Mobile-optimized platform","Comprehensive VIP program","Multiple cryptocurrency options"],"cons":["Wagering requirements on bonuses","Verification required for first withdrawal"],"payments":"Visa, Mastercard, PayPal, Skrill, Neteller, Bitcoin, Paysafecard","link":"https://track-cr.com/B1BD6?sub_id_9=https://bet-ninja-casino.org.uk/","url":"https://track-cr.com/B1BD6?sub_id_9=https://bet-ninja-casino.org.uk/","href":"https://track-cr.com/B1BD6?sub_id_9=https://bet-ninja-casino.org.uk/","payout":"Immediato","payout_time":"Immediato","payoutTime":"Immediato","withdrawal_time":"Immediato","withdrawal":"Immediato","speed":"Immediato","payoutSpeed":"Immediato","payout_speed":"Immediato","fast_payout":"Immediato","time":"Immediato","highlight":"2,500+ premium games","features":["2,500+ premium games"],"logo":null}];
                 if (casinos && casinos.length > 0) {
                     const brand = casinos[0];
                     
                     // Inject Brand Name
-                    const nameElements = document.querySelectorAll('.brand-name-inject');
-                    nameElements.forEach(el => {
-                        el.textContent = brand.name || 'Bet Ninja';
-                    });
+                    if (brand.name) {
+                        document.querySelectorAll('.brand-name-el').forEach(el => {
+                            el.textContent = brand.name;
+                        });
+                    }
 
                     // Inject Brand Bonus
-                    const bonusElements = document.querySelectorAll('.brand-bonus-inject');
-                    bonusElements.forEach(el => {
-                        el.textContent = brand.bonus || '100% Up To $1000 + 100 FS';
-                    });
+                    if (brand.bonus) {
+                        document.querySelectorAll('.brand-bonus-el').forEach(el => {
+                            el.textContent = brand.bonus;
+                        });
+                    }
                 }
             } catch (error) {
-                console.error('Error parsing casino JSON data:', error);
-                // Fallbacks are already in the HTML structure
+                console.error("Error parsing CASINOS_JSON or injecting data:", error);
+                // Fallbacks are already in the HTML text content
             }
-
-            // Sticky Header Background change on scroll
-            const header = document.querySelector('header');
-            window.addEventListener('scroll', () => {
-                if (window.scrollY > 20) {
-                    header.classList.add('shadow-lg', 'shadow-ninja-green/5');
-                } else {
-                    header.classList.remove('shadow-lg', 'shadow-ninja-green/5');
-                }
-            });
         });
     </script>
 
@@ -759,7 +700,7 @@
 <script>
   document.addEventListener('DOMContentLoaded', () => {
     try {
-      const casinosData = [{"rank":1,"name":"Bet Ninja Casino","rating":4.7,"bonus":"100% up to £500 + 200 Free Spins","highlights":["2000+ casino games","Crypto payments accepted","24/7 live chat support"],"pros":["Extensive game library from top providers","Fast crypto withdrawals","Generous welcome package","Mobile-optimized platform"],"cons":["Not UK Gambling Commission licensed","Wagering requirements apply to bonuses"],"payments":"Visa, Mastercard, Skrill, Neteller, Bitcoin, Ethereum","link":"https://track-cr.com/B1BD6?sub_id_9=https://bet-ninja-casino.org.uk/","url":"https://track-cr.com/B1BD6?sub_id_9=https://bet-ninja-casino.org.uk/","href":"https://track-cr.com/B1BD6?sub_id_9=https://bet-ninja-casino.org.uk/","payout":"Immediato","payout_time":"Immediato","payoutTime":"Immediato","withdrawal_time":"Immediato","withdrawal":"Immediato","speed":"Immediato","payoutSpeed":"Immediato","payout_speed":"Immediato","fast_payout":"Immediato","time":"Immediato","highlight":"2000+ casino games","features":["2000+ casino games"],"logo":null}];
+      const casinosData = [{"rank":1,"name":"Bet Ninja Casino","rating":4.8,"bonus":"100% up to £500 + 200 Free Spins","highlights":["2,500+ premium games","Fast withdrawals in 24-48 hours","Licensed and regulated platform"],"pros":["Extensive game library from top providers","Mobile-optimized platform","Comprehensive VIP program","Multiple cryptocurrency options"],"cons":["Wagering requirements on bonuses","Verification required for first withdrawal"],"payments":"Visa, Mastercard, PayPal, Skrill, Neteller, Bitcoin, Paysafecard","link":"https://track-cr.com/B1BD6?sub_id_9=https://bet-ninja-casino.org.uk/","url":"https://track-cr.com/B1BD6?sub_id_9=https://bet-ninja-casino.org.uk/","href":"https://track-cr.com/B1BD6?sub_id_9=https://bet-ninja-casino.org.uk/","payout":"Immediato","payout_time":"Immediato","payoutTime":"Immediato","withdrawal_time":"Immediato","withdrawal":"Immediato","speed":"Immediato","payoutSpeed":"Immediato","payout_speed":"Immediato","fast_payout":"Immediato","time":"Immediato","highlight":"2,500+ premium games","features":["2,500+ premium games"],"logo":null}];
       
       if (casinosData && casinosData.length > 0) {
         const targetLink = casinosData[0].url || casinosData[0].link || '#';
@@ -790,7 +731,7 @@
 
 <script>
   document.addEventListener('DOMContentLoaded', () => {
-    const slotImagesPool = ["https://cdn.jsdelivr.net/gh/aiguruitmaster/casino-images/gates-of-olympus-logo.webp","https://cdn.jsdelivr.net/gh/aiguruitmaster/casino-images/7cde2615-576e-4d75-b560-5fbc7a4437f7.jpg","https://cdn.jsdelivr.net/gh/aiguruitmaster/casino-images/e7fb81e6-a23d-4fbf-a147-9f1f718eb555.jpg","https://cdn.jsdelivr.net/gh/aiguruitmaster/casino-images/eec98bc4-1245-4196-ac9a-ce120cbbf151.jpg","https://cdn.jsdelivr.net/gh/aiguruitmaster/casino-images/78f570a4-9a1d-48e0-b833-c0bf54fc67ad.jpg","https://cdn.jsdelivr.net/gh/aiguruitmaster/casino-images/sweet-bonanza-1.png","https://cdn.jsdelivr.net/gh/aiguruitmaster/casino-images/amigo-3-spirit-volcanoes.webp","https://cdn.jsdelivr.net/gh/aiguruitmaster/casino-images/sun-of-egypt-5.webp","https://cdn.jsdelivr.net/gh/aiguruitmaster/casino-images/6dec49a0-f6bd-4226-90fc-ce91d30b2002.jpg","https://cdn.jsdelivr.net/gh/aiguruitmaster/casino-images/СloverFlames.webp","https://cdn.jsdelivr.net/gh/aiguruitmaster/casino-images/178073c1-5961-40a3-995b-c3398db95aec.jpg","https://cdn.jsdelivr.net/gh/aiguruitmaster/casino-images/e1bfe1fd-d097-4adc-b243-614bee771838.jpg"];
+    const slotImagesPool = ["https://cdn.jsdelivr.net/gh/aiguruitmaster/casino-images/178073c1-5961-40a3-995b-c3398db95aec.jpg","https://cdn.jsdelivr.net/gh/aiguruitmaster/casino-images/6dec49a0-f6bd-4226-90fc-ce91d30b2002.jpg","https://cdn.jsdelivr.net/gh/aiguruitmaster/casino-images/СloverFlames.webp","https://cdn.jsdelivr.net/gh/aiguruitmaster/casino-images/78f570a4-9a1d-48e0-b833-c0bf54fc67ad.jpg","https://cdn.jsdelivr.net/gh/aiguruitmaster/casino-images/sun-of-egypt-5.webp","https://cdn.jsdelivr.net/gh/aiguruitmaster/casino-images/eec98bc4-1245-4196-ac9a-ce120cbbf151.jpg","https://cdn.jsdelivr.net/gh/aiguruitmaster/casino-images/sweet-bonanza-1.png","https://cdn.jsdelivr.net/gh/aiguruitmaster/casino-images/7cde2615-576e-4d75-b560-5fbc7a4437f7.jpg","https://cdn.jsdelivr.net/gh/aiguruitmaster/casino-images/amigo-3-spirit-volcanoes.webp","https://cdn.jsdelivr.net/gh/aiguruitmaster/casino-images/e1bfe1fd-d097-4adc-b243-614bee771838.jpg","https://cdn.jsdelivr.net/gh/aiguruitmaster/casino-images/gates-of-olympus-logo.webp","https://cdn.jsdelivr.net/gh/aiguruitmaster/casino-images/e7fb81e6-a23d-4fbf-a147-9f1f718eb555.jpg"];
     const slotPlaceholders = document.querySelectorAll('.auto-slot-img');
     
     if (slotPlaceholders.length > 0) {
